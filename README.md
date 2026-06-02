@@ -2,16 +2,16 @@
 
 ## WHO DOES WHAT
 ### Nikki:
-- UI
+- UI & Planning
 ### Nih:
 - Databases
 ### Big D:
-- Something
+- Atmosphere
 ### Tomasch:
 - implementing scoring algorithm (need to have coordinates of point and guess and ill do the rest based off that)
 - ...
 ### Small B:
-- Jack off
+- Give us all sloppy top
 
 ## STRUCTURE
 - still images
