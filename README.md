@@ -21,7 +21,23 @@
 - **20 photos / 5 photos per round**
 
 ### Algo?:
-  300 meters off = 2000 point
-  -> then 1 meter = 10 points
-(Anything over 300 meters = no points L bozo)
+function calculateScore(distanceInMeters) {
+    // 1. Perfect score condition
+    if (distanceInMeters < 10) {
+        return 5000;
+    }
+    
+    // 2. Out of bounds condition
+    if (distanceInMeters > 1000) {
+        return 0;
+    }
+    
+    // 3. Linear scaling between 10m and 1000m
+    const maxScore = 5000;
+    const distanceWindow = 1000 - 10; // 990 meters total sliding scale
+    
+    const score = (1 - (distanceInMeters - 10) / distanceWindow) * maxScore;
+    
+    return Math.round(score);
+}
 
